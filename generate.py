@@ -54,7 +54,7 @@ def main():
     """
     global args
 
-    df = pd.read_csv(args.input_csv)
+    df = pd.read_csv(args.input_csv, sep=args.separator)
 
     for r in df.iterrows():
         # Generate directory
@@ -112,6 +112,8 @@ if __name__ == '__main__':
         # Add options
         parser.add_argument("-l", "--log_file", default=None,
                             help="Logger file")
+        parser.add_argument("-s", "--separator", default="\t",
+                            help="")
         parser.add_argument("-v", "--verbosity", action="count", default=0,
                             help="increase output verbosity")
 
