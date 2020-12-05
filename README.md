@@ -35,14 +35,8 @@ optional arguments:
 ```
 
 The input CSV fileshould contain the following information:
-
-Artist
-: The name of the artist
-
-Album
-: The album name
-
-Year
-: The release year of the album
+ - **Artist:** The name of the artist
+ - **Album:** The album name
+ - **Year:** The release year of the album
 
 The separator is user defined via the option `-s`. The default value is `\t`
