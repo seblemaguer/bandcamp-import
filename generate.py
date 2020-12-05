@@ -118,9 +118,9 @@ if __name__ == '__main__':
                             help="increase output verbosity")
 
         # Add arguments
-        parser.add_argument("input_csv")
-        parser.add_argument("input_dir")
-        parser.add_argument("output_dir")
+        parser.add_argument("input_csv", help="The CSV file which contains the meta-information")
+        parser.add_argument("input_dir", help="The directory containing the zip files downloaded from bandcamp")
+        parser.add_argument("output_dir", help="The root directory which will contain the music unpacked and organized")
 
         # Parsing arguments
         args = parser.parse_args()
